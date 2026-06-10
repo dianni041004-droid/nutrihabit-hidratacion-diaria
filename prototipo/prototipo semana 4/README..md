@@ -32,3 +32,4 @@ NutriHabit es una aplicación orientada al seguimiento de la hidratación diaria
 - Metas de hidratación
 - Perfil de usuario
 - Registro de consumo de agua
+   
