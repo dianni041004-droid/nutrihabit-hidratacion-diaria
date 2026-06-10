@@ -15,7 +15,7 @@ NutriHabit es una aplicación orientada al seguimiento de la hidratación diaria
 - Firebase Cloud Messaging
 - Room Database
 
-## Avance Semana 4
+ Avance Semana 4
 
 - Diseño de Base de Datos
 - Diagrama Entidad-Relación
@@ -25,6 +25,10 @@ NutriHabit es una aplicación orientada al seguimiento de la hidratación diaria
 - Prototipo Navegable
 - Mapa de Navegación
 
-## Repositorio
+ Funcionalidades
 
-https://github.com/dianni041004-droid/nutrihabit-hidratacion-diaria
+- Inicio
+- Historial de consumo
+- Metas de hidratación
+- Perfil de usuario
+- Registro de consumo de agua
