@@ -11,7 +11,9 @@ Desarrollar una aplicación móvil Android que permita a los usuarios registrar 
 ## Tecnologías Utilizadas
 
 - VS Code
-- Kotlin
+- HTML
+- CSS
+- JavaScript
 - Android Studio
 - Firebase Authentication
 - Firebase Firestore
