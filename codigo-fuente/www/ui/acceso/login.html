@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriHabit - Bienvenida</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="../../manifest.json">
+</head>
+<body>
+
+<div class="auth-container">
+    
+    <!-- Logo y eslogan -->
+    <div class="auth-header">
+        <div class="auth-logo">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="28" fill="#3A7D44" stroke="#2E6B38" stroke-width="2"/>
+                <circle cx="32" cy="32" r="18" fill="#5BAE6B" stroke="#3A7D44" stroke-width="1.5"/>
+                <path d="M26 32L30 36L39 27" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h1>NutriHabit</h1>
+        </div>
+        <p class="auth-slogan">Pequeños hábitos, grandes cambios.</p>
+        <p class="auth-descripcion">NutriHabit te ayuda a mantenerte hidratado y alcanzar tus metas diarias de agua.</p>
+    </div>
+
+    <!-- Botones -->
+    <div class="auth-buttons">
+        <a href="signin.html" class="btn btn-primary" style="margin-bottom: var(--space-3);">
+            Iniciar sesión
+        </a>
+        <a href="register.html" class="btn btn-outline">
+            Registrarse
+        </a>
+    </div>
+
+    <p class="auth-version">Versión 2.0.0</p>
+</div>
+
+<style>
+    .auth-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: var(--space-8) var(--space-5);
+        background: var(--bg-primary);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .auth-header {
+        text-align: center;
+        margin-bottom: var(--space-9);
+    }
+
+    .auth-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-3);
+        margin-bottom: var(--space-4);
+    }
+
+    .auth-logo h1 {
+        font-size: var(--text-3xl);
+        font-weight: var(--font-extrabold);
+        color: var(--primary-500);
+        letter-spacing: -0.5px;
+    }
+
+    .auth-slogan {
+        font-size: var(--text-lg);
+        font-weight: var(--font-bold);
+        color: var(--text-primary);
+        margin-bottom: var(--space-2);
+    }
+
+    .auth-descripcion {
+        font-size: var(--text-sm);
+        color: var(--text-muted);
+        line-height: var(--leading-loose);
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .auth-buttons {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: var(--space-8);
+    }
+
+    .auth-buttons .btn {
+        width: 100%;
+        padding: var(--space-4);
+        font-size: var(--text-md);
+        border-radius: var(--radius-md);
+    }
+
+    .auth-version {
+        font-size: var(--text-xs);
+        color: var(--gray-400);
+    }
+
+    /* Animación de entrada */
+    .auth-container {
+        animation: fadeUp var(--transition-slow) forwards;
+    }
+</style>
+
+</body>
+</html>

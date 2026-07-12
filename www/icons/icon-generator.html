@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generador de Iconos</title>
+</head>
+<body>
+    <canvas id="canvas" width="512" height="512"></canvas>
+    <button onclick="downloadIcon()">Descargar Icono</button>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Dibujar un icono simple de gota de agua
+        function drawIcon() {
+            ctx.clearRect(0, 0, 512, 512);
+            
+            // Fondo circular verde
+            const gradient = ctx.createRadialGradient(256, 256, 0, 256, 256, 256);
+            gradient.addColorStop(0, '#4CAF50');
+            gradient.addColorStop(1, '#2E6B38');
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.arc(256, 256, 240, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Gota de agua blanca
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.moveTo(256, 80);
+            ctx.quadraticCurveTo(160, 200, 160, 320);
+            ctx.quadraticCurveTo(160, 400, 256, 400);
+            ctx.quadraticCurveTo(352, 400, 352, 320);
+            ctx.quadraticCurveTo(352, 200, 256, 80);
+            ctx.fill();
+            
+            // Brillo
+            ctx.fillStyle = 'rgba(255,255,255,0.3)';
+            ctx.beginPath();
+            ctx.ellipse(220, 260, 30, 50, -0.3, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        
+        drawIcon();
+        
+        function downloadIcon() {
+            const link = document.createElement('a');
+            link.download = 'icon-512x512.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>

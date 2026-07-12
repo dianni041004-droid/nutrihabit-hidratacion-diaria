@@ -1,0 +1,15 @@
+{
+  "appId": "com.nutrihabit.app",
+  "appName": "NutriHabit",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "iconColor": "#3A7D44",
+      "sound": "default"
+    }
+  }
+}
